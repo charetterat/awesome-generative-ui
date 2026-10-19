@@ -1,552 +1,552 @@
 {
-  "_comment": "Single source of truth for awesome-generative-ui. Star counts verified live across the 19001 HK proxy on 2026-10-12. One row per real, public, independently-usable repository in the generative-UI ecosystem.",
-  "updated": "2026-10-12",
-  "model": {
-    "name": "Generative UI",
-    "repo": "CopilotKit/CopilotKit",
-    "homepage": "https://ag-ui.com",
-    "what": "Generative UI is the pattern where an agent's output is not text but UI — the model emits a structured spec (often JSON or an event stream), and the client renders it with real components. It replaces 'here is a wall of markdown' with 'here is the actual widget you asked for'."
+ "_comment": "Single source of truth for awesome-generative-ui. Star counts verified live across the 19001 HK proxy on 2026-10-12. One row per real, public, independently-usable repository in the generative-UI ecosystem.",
+ "updated": "2026-10-19",
+ "model": {
+  "name": "Generative UI",
+  "repo": "CopilotKit/CopilotKit",
+  "homepage": "https://ag-ui.com",
+  "what": "Generative UI is the pattern where an agent's output is not text but UI — the model emits a structured spec (often JSON or an event stream), and the client renders it with real components. It replaces 'here is a wall of markdown' with 'here is the actual widget you asked for'."
+ },
+ "layers": [
+  {
+   "layer_name": "Protocols & Standards",
+   "icon": "📐",
+   "description": "The wire formats. An agent backend emits these; any conforming renderer draws them. This is the layer that makes generative UI portable across frameworks — and it is why adapters and renderers below can be written by anyone.",
+   "items": [
+    {
+     "name": "ag-ui",
+     "repo": "ag-ui-protocol/ag-ui",
+     "url": "https://github.com/ag-ui-protocol/ag-ui",
+     "stars": 16455,
+     "language": "TypeScript",
+     "license": "MIT",
+     "role": "Protocol",
+     "what": "The Agent-User Interaction Protocol — a transport-agnostic event stream connecting any agent backend to any frontend. Reference spec with Python and TypeScript SDKs.",
+     "key_capabilities": "Event-stream spec · Python + TS SDKs"
+    },
+    {
+     "name": "openui",
+     "repo": "thesysdev/openui",
+     "url": "https://github.com/thesysdev/openui",
+     "stars": 10718,
+     "language": "TypeScript",
+     "license": "MIT",
+     "role": "Standard · DSL",
+     "what": "An open standard and DSL for generative UI: the model emits OpenUI Lang, any conforming renderer draws it. Ships with a component library and renderers.",
+     "key_capabilities": "OpenUI Lang DSL · framework-agnostic"
+    },
+    {
+     "name": "a2ui-sdk",
+     "repo": "easyops-cn/a2ui-sdk",
+     "url": "https://github.com/easyops-cn/a2ui-sdk",
+     "stars": 39,
+     "language": "TypeScript",
+     "license": "Apache-2.0",
+     "role": "Protocol SDK",
+     "what": "TypeScript SDK for the A2UI protocol — agent-to-UI messages that render as native components on any surface.",
+     "key_capabilities": "A2UI · TypeScript"
+    },
+    {
+     "name": "generative-ui",
+     "repo": "CopilotKit/generative-ui",
+     "url": "https://github.com/CopilotKit/generative-ui",
+     "stars": 848,
+     "language": null,
+     "license": null,
+     "role": "Reference examples",
+     "what": "Official side-by-side examples of all three generative-UI methods: AG-UI, A2UI/Open-JSON-UI, and MCP Apps.",
+     "key_capabilities": "AG-UI · A2UI · MCP Apps"
+    }
+   ]
   },
-  "layers": [
+  {
+   "layer_name": "Frameworks & SDKs",
+   "icon": "🏗️",
+   "description": "End-to-end frameworks that own the loop from model output to rendered UI. Pick by stack and by how much control you want over which component renders.",
+   "items": [
     {
-      "layer_name": "Protocols & Standards",
-      "icon": "📐",
-      "description": "The wire formats. An agent backend emits these; any conforming renderer draws them. This is the layer that makes generative UI portable across frameworks — and it is why adapters and renderers below can be written by anyone.",
-      "items": [
-        {
-          "name": "ag-ui",
-          "repo": "ag-ui-protocol/ag-ui",
-          "url": "https://github.com/ag-ui-protocol/ag-ui",
-          "stars": 16455,
-          "language": "TypeScript",
-          "license": "MIT",
-          "role": "Protocol",
-          "what": "The Agent-User Interaction Protocol — a transport-agnostic event stream connecting any agent backend to any frontend. Reference spec with Python and TypeScript SDKs.",
-          "key_capabilities": "Event-stream spec · Python + TS SDKs"
-        },
-        {
-          "name": "openui",
-          "repo": "thesysdev/openui",
-          "url": "https://github.com/thesysdev/openui",
-          "stars": 10718,
-          "language": "TypeScript",
-          "license": "MIT",
-          "role": "Standard · DSL",
-          "what": "An open standard and DSL for generative UI: the model emits OpenUI Lang, any conforming renderer draws it. Ships with a component library and renderers.",
-          "key_capabilities": "OpenUI Lang DSL · framework-agnostic"
-        },
-        {
-          "name": "a2ui-sdk",
-          "repo": "easyops-cn/a2ui-sdk",
-          "url": "https://github.com/easyops-cn/a2ui-sdk",
-          "stars": 39,
-          "language": "TypeScript",
-          "license": "Apache-2.0",
-          "role": "Protocol SDK",
-          "what": "TypeScript SDK for the A2UI protocol — agent-to-UI messages that render as native components on any surface.",
-          "key_capabilities": "A2UI · TypeScript"
-        },
-        {
-          "name": "generative-ui",
-          "repo": "CopilotKit/generative-ui",
-          "url": "https://github.com/CopilotKit/generative-ui",
-          "stars": 848,
-          "language": null,
-          "license": null,
-          "role": "Reference examples",
-          "what": "Official side-by-side examples of all three generative-UI methods: AG-UI, A2UI/Open-JSON-UI, and MCP Apps.",
-          "key_capabilities": "AG-UI · A2UI · MCP Apps"
-        }
-      ]
+     "name": "CopilotKit",
+     "repo": "CopilotKit/CopilotKit",
+     "url": "https://github.com/CopilotKit/CopilotKit",
+     "stars": 37940,
+     "language": "TypeScript",
+     "license": "MIT",
+     "role": "Framework · React/Angular/Mobile",
+     "what": "The frontend stack for agents and generative UI — React, Angular, mobile, and Slack surfaces, built on AG-UI.",
+     "key_capabilities": "React/Angular · AG-UI · generative UI"
     },
     {
-      "layer_name": "Frameworks & SDKs",
-      "icon": "🏗️",
-      "description": "End-to-end frameworks that own the loop from model output to rendered UI. Pick by stack and by how much control you want over which component renders.",
-      "items": [
-        {
-          "name": "CopilotKit",
-          "repo": "CopilotKit/CopilotKit",
-          "url": "https://github.com/CopilotKit/CopilotKit",
-          "stars": 37940,
-          "language": "TypeScript",
-          "license": "MIT",
-          "role": "Framework · React/Angular/Mobile",
-          "what": "The frontend stack for agents and generative UI — React, Angular, mobile, and Slack surfaces, built on AG-UI.",
-          "key_capabilities": "React/Angular · AG-UI · generative UI"
-        },
-        {
-          "name": "json-render",
-          "repo": "vercel-labs/json-render",
-          "url": "https://github.com/vercel-labs/json-render",
-          "stars": 18615,
-          "language": "TypeScript",
-          "license": "Apache-2.0",
-          "role": "Framework · React",
-          "what": "Vercel Labs' generative UI framework: the model streams JSON, the client renders it with your own components. Third-party renderers already exist for other frameworks.",
-          "key_capabilities": "streamed JSON · bring-your-own components"
-        },
-        {
-          "name": "tambo",
-          "repo": "tambo-ai/tambo",
-          "url": "https://github.com/tambo-ai/tambo",
-          "stars": 11188,
-          "language": "TypeScript",
-          "license": "MIT",
-          "role": "SDK · React",
-          "what": "Generative UI SDK for React — the agent decides which of your registered components to render, and with what props.",
-          "key_capabilities": "React · component selection"
-        },
-        {
-          "name": "OpenIntelligentUI",
-          "repo": "CopilotKit/OpenIntelligentUI",
-          "url": "https://github.com/CopilotKit/OpenIntelligentUI",
-          "stars": 2643,
-          "language": "TypeScript",
-          "license": "MIT",
-          "role": "Framework",
-          "what": "Open-source generative UI framework.",
-          "key_capabilities": "generative UI"
-        },
-        {
-          "name": "prefab",
-          "repo": "PrefectHQ/prefab",
-          "url": "https://github.com/PrefectHQ/prefab",
-          "stars": 742,
-          "language": "HTML",
-          "license": "Apache-2.0",
-          "role": "Framework",
-          "what": "A generative UI framework from Prefect that even humans can use — declarative UI the model composes.",
-          "key_capabilities": "declarative · model-composed"
-        },
-        {
-          "name": "flama",
-          "repo": "vortico/flama",
-          "url": "https://github.com/vortico/flama",
-          "stars": 301,
-          "language": "Python",
-          "license": "Apache-2.0",
-          "role": "Framework · Python",
-          "what": "A production framework for predictive and generative AI, with a built-in UI layer.",
-          "key_capabilities": "Python · production"
-        },
-        {
-          "name": "threadplane",
-          "repo": "cacheplane/threadplane",
-          "url": "https://github.com/cacheplane/threadplane",
-          "stars": 305,
-          "language": "TypeScript",
-          "license": "MIT",
-          "role": "Infrastructure",
-          "what": "The open-source thread-plane for agents: chat, durable threads, and generative UI in one runtime.",
-          "key_capabilities": "durable threads"
-        },
-        {
-          "name": "moi",
-          "repo": "molefrog/moi",
-          "url": "https://github.com/molefrog/moi",
-          "stars": 183,
-          "language": "TypeScript",
-          "license": "NOASSERTION",
-          "role": "Workspace",
-          "what": "Agent-agnostic generative UI workspace — give any agent a shared canvas.",
-          "key_capabilities": "agent-agnostic canvas"
-        }
-      ]
+     "name": "json-render",
+     "repo": "vercel-labs/json-render",
+     "url": "https://github.com/vercel-labs/json-render",
+     "stars": 18615,
+     "language": "TypeScript",
+     "license": "Apache-2.0",
+     "role": "Framework · React",
+     "what": "Vercel Labs' generative UI framework: the model streams JSON, the client renders it with your own components. Third-party renderers already exist for other frameworks.",
+     "key_capabilities": "streamed JSON · bring-your-own components"
     },
     {
-      "layer_name": "Component Libraries",
-      "icon": "🧩",
-      "description": "The primitives you compose into an agent UI. Not full frameworks — these are the chat shells, message parts, and tool-call renders you build on.",
-      "items": [
-        {
-          "name": "assistant-ui",
-          "repo": "assistant-ui/assistant-ui",
-          "url": "https://github.com/assistant-ui/assistant-ui",
-          "stars": 12480,
-          "language": "TypeScript",
-          "license": "MIT",
-          "role": "Library · React",
-          "what": "TypeScript/React library for AI chat — streaming-safe primitives for messages, tool calls, and generated parts.",
-          "key_capabilities": "React · streaming chat primitives"
-        },
-        {
-          "name": "langui",
-          "repo": "CommandCodeAI/langui",
-          "url": "https://github.com/CommandCodeAI/langui",
-          "stars": 3144,
-          "language": "HTML",
-          "license": "MIT",
-          "role": "Library · Tailwind",
-          "what": "Open-source Tailwind components tailored for AI interfaces — chat, tool calls, and generated UI.",
-          "key_capabilities": "Tailwind · AI-shaped components"
-        },
-        {
-          "name": "flutter_chat_ui",
-          "repo": "flyerhq/flutter_chat_ui",
-          "url": "https://github.com/flyerhq/flutter_chat_ui",
-          "stars": 2360,
-          "language": "Dart",
-          "license": "Apache-2.0",
-          "role": "Library · Flutter",
-          "what": "Free and open-source chat SDK for Flutter — fast, real-time, cross-platform chat UI.",
-          "key_capabilities": "Flutter · cross-platform"
-        }
-      ]
+     "name": "tambo",
+     "repo": "tambo-ai/tambo",
+     "url": "https://github.com/tambo-ai/tambo",
+     "stars": 11188,
+     "language": "TypeScript",
+     "license": "MIT",
+     "role": "SDK · React",
+     "what": "Generative UI SDK for React — the agent decides which of your registered components to render, and with what props.",
+     "key_capabilities": "React · component selection"
     },
     {
-      "layer_name": "Platform Renderers",
-      "icon": "🖥️",
-      "description": "Same protocol, different surface. These projects render agent-emitted UI on a specific platform — mobile, a JS framework, or the terminal.",
-      "items": [
-        {
-          "name": "AGenUI",
-          "repo": "AGenUI/AGenUI",
-          "url": "https://github.com/AGenUI/AGenUI",
-          "stars": 1192,
-          "language": "C++",
-          "license": "Apache-2.0",
-          "role": "Renderer · Mobile",
-          "what": "Native A2UI renderer for iOS, Android and HarmonyOS — high-performance streaming generative UI on mobile.",
-          "key_capabilities": "iOS/Android/HarmonyOS · streaming"
-        },
-        {
-          "name": "A2UI-Android",
-          "repo": "lmee/A2UI-Android",
-          "url": "https://github.com/lmee/A2UI-Android",
-          "stars": 77,
-          "language": "TypeScript",
-          "license": "Apache-2.0",
-          "role": "Renderer · Android",
-          "what": "Production-ready Jetpack Compose renderer for the A2UI protocol.",
-          "key_capabilities": "Jetpack Compose"
-        },
-        {
-          "name": "a2ui-vue",
-          "repo": "shawnwang15/a2ui-vue",
-          "url": "https://github.com/shawnwang15/a2ui-vue",
-          "stars": 98,
-          "language": "TypeScript",
-          "license": "MIT",
-          "role": "Renderer · Vue 3",
-          "what": "Vue 3 implementation of the A2UI protocol.",
-          "key_capabilities": "Vue 3"
-        },
-        {
-          "name": "ngx-json-render",
-          "repo": "shteynu/ngx-json-render",
-          "url": "https://github.com/shteynu/ngx-json-render",
-          "stars": 4,
-          "language": "TypeScript",
-          "license": "Apache-2.0",
-          "role": "Renderer · Angular",
-          "what": "Generative UI for Angular: a json-render renderer that streams and renders the JSON UI spec.",
-          "key_capabilities": "Angular · json-render"
-        },
-        {
-          "name": "termite",
-          "repo": "shobrook/termite",
-          "url": "https://github.com/shobrook/termite",
-          "stars": 420,
-          "language": "Python",
-          "license": "Apache-2.0",
-          "role": "Renderer · Terminal",
-          "what": "Generative UI in your terminal — render rich agent output as a TUI instead of plain text.",
-          "key_capabilities": "terminal UI"
-        }
-      ]
+     "name": "OpenIntelligentUI",
+     "repo": "CopilotKit/OpenIntelligentUI",
+     "url": "https://github.com/CopilotKit/OpenIntelligentUI",
+     "stars": 2643,
+     "language": "TypeScript",
+     "license": "MIT",
+     "role": "Framework",
+     "what": "Open-source generative UI framework.",
+     "key_capabilities": "generative UI"
     },
     {
-      "layer_name": "Framework Adapters & Examples",
-      "icon": "🔌",
-      "description": "Reference implementations that wire generative UI into a specific agent framework. Copy the shape, not just the idea.",
-      "items": [
-        {
-          "name": "gemini-chatbot",
-          "repo": "vercel-labs/gemini-chatbot",
-          "url": "https://github.com/vercel-labs/gemini-chatbot",
-          "stars": 1353,
-          "language": "TypeScript",
-          "license": "NOASSERTION",
-          "role": "Starter · Vercel AI SDK",
-          "what": "Build your own generative UI chatbot with the Vercel AI SDK and Gemini.",
-          "key_capabilities": "chatbot starter"
-        },
-        {
-          "name": "langgraphjs-gen-ui-examples",
-          "repo": "langchain-ai/langgraphjs-gen-ui-examples",
-          "url": "https://github.com/langchain-ai/langgraphjs-gen-ui-examples",
-          "stars": 400,
-          "language": "TypeScript",
-          "license": "MIT",
-          "role": "Examples · LangGraph JS",
-          "what": "A collection of generative UI agents written with LangGraph.js.",
-          "key_capabilities": "LangGraph.js"
-        },
-        {
-          "name": "gen-ui-python",
-          "repo": "bracesproul/gen-ui-python",
-          "url": "https://github.com/bracesproul/gen-ui-python",
-          "stars": 388,
-          "language": "TypeScript",
-          "license": null,
-          "role": "Examples · LangChain Python",
-          "what": "Generative UI web application built with LangChain in Python.",
-          "key_capabilities": "LangChain Python"
-        },
-        {
-          "name": "gen-ui",
-          "repo": "bracesproul/gen-ui",
-          "url": "https://github.com/bracesproul/gen-ui",
-          "stars": 292,
-          "language": "TypeScript",
-          "license": null,
-          "role": "Examples · LangChain JS",
-          "what": "Generative UI web application built with LangChain.js.",
-          "key_capabilities": "LangChain.js"
-        },
-        {
-          "name": "ai-sdk-preview-rsc-genui",
-          "repo": "vercel-labs/ai-sdk-preview-rsc-genui",
-          "url": "https://github.com/vercel-labs/ai-sdk-preview-rsc-genui",
-          "stars": 385,
-          "language": "TypeScript",
-          "license": null,
-          "role": "Examples · React Server Components",
-          "what": "Generative UI with React Server Components and the Vercel AI SDK.",
-          "key_capabilities": "RSC · AI SDK"
-        }
-      ]
+     "name": "prefab",
+     "repo": "PrefectHQ/prefab",
+     "url": "https://github.com/PrefectHQ/prefab",
+     "stars": 742,
+     "language": "HTML",
+     "license": "Apache-2.0",
+     "role": "Framework",
+     "what": "A generative UI framework from Prefect that even humans can use — declarative UI the model composes.",
+     "key_capabilities": "declarative · model-composed"
     },
     {
-      "layer_name": "Apps & Demos",
-      "icon": "🎬",
-      "description": "Finished products and runnable demos where the UI is authored by a model — the fastest way to see what generative UI actually feels like.",
-      "items": [
-        {
-          "name": "morphic",
-          "repo": "miurla/morphic",
-          "url": "https://github.com/miurla/morphic",
-          "stars": 9159,
-          "language": "TypeScript",
-          "license": "Apache-2.0",
-          "role": "App · AI search",
-          "what": "An AI-powered search engine with a generative UI — answers rendered as interactive components, not walls of text.",
-          "key_capabilities": "AI search · generative answers"
-        },
-        {
-          "name": "cofounder",
-          "repo": "nraiden/cofounder",
-          "url": "https://github.com/nraiden/cofounder",
-          "stars": 6645,
-          "language": "TypeScript",
-          "license": "MIT",
-          "role": "App · full-stack",
-          "what": "AI-generated apps — full stack plus generative UI.",
-          "key_capabilities": "full-stack generation"
-        },
-        {
-          "name": "pi-generative-ui",
-          "repo": "Michaelliv/pi-generative-ui",
-          "url": "https://github.com/Michaelliv/pi-generative-ui",
-          "stars": 1162,
-          "language": "TypeScript",
-          "license": null,
-          "role": "Demo",
-          "what": "Claude.ai's generative UI — reverse-engineered and rebuilt for self-hosting.",
-          "key_capabilities": "reverse-engineered demos"
-        },
-        {
-          "name": "financial-agent-ui",
-          "repo": "virattt/financial-agent-ui",
-          "url": "https://github.com/virattt/financial-agent-ui",
-          "stars": 793,
-          "language": "TypeScript",
-          "license": null,
-          "role": "Demo · finance",
-          "what": "A financial agent paired with a generative UI.",
-          "key_capabilities": "finance agent"
-        },
-        {
-          "name": "partialupdate",
-          "repo": "philholden/partialupdate",
-          "url": "https://github.com/philholden/partialupdate",
-          "stars": 254,
-          "language": "TypeScript",
-          "license": "MIT",
-          "role": "Demo · multi-user",
-          "what": "Generative UI in multi-user chat — a bot that edits the shared UI as it responds.",
-          "key_capabilities": "multi-user editing"
-        },
-        {
-          "name": "MAIC-UI",
-          "repo": "THU-MAIC/MAIC-UI",
-          "url": "https://github.com/THU-MAIC/MAIC-UI",
-          "stars": 175,
-          "language": "Python",
-          "license": null,
-          "role": "Demo · education",
-          "what": "Making interactive courseware with generative UI.",
-          "key_capabilities": "interactive courseware"
-        }
-      ]
+     "name": "flama",
+     "repo": "vortico/flama",
+     "url": "https://github.com/vortico/flama",
+     "stars": 301,
+     "language": "Python",
+     "license": "Apache-2.0",
+     "role": "Framework · Python",
+     "what": "A production framework for predictive and generative AI, with a built-in UI layer.",
+     "key_capabilities": "Python · production"
+    },
+    {
+     "name": "threadplane",
+     "repo": "cacheplane/threadplane",
+     "url": "https://github.com/cacheplane/threadplane",
+     "stars": 305,
+     "language": "TypeScript",
+     "license": "MIT",
+     "role": "Infrastructure",
+     "what": "The open-source thread-plane for agents: chat, durable threads, and generative UI in one runtime.",
+     "key_capabilities": "durable threads"
+    },
+    {
+     "name": "moi",
+     "repo": "molefrog/moi",
+     "url": "https://github.com/molefrog/moi",
+     "stars": 183,
+     "language": "TypeScript",
+     "license": "NOASSERTION",
+     "role": "Workspace",
+     "what": "Agent-agnostic generative UI workspace — give any agent a shared canvas.",
+     "key_capabilities": "agent-agnostic canvas"
     }
-  ],
-  "verification_sources": [
+   ]
+  },
+  {
+   "layer_name": "Component Libraries",
+   "icon": "🧩",
+   "description": "The primitives you compose into an agent UI. Not full frameworks — these are the chat shells, message parts, and tool-call renders you build on.",
+   "items": [
     {
-      "name": "ag-ui",
-      "url": "https://github.com/ag-ui-protocol/ag-ui",
-      "expected_token": "ag-ui-protocol/ag-ui"
+     "name": "assistant-ui",
+     "repo": "assistant-ui/assistant-ui",
+     "url": "https://github.com/assistant-ui/assistant-ui",
+     "stars": 12480,
+     "language": "TypeScript",
+     "license": "MIT",
+     "role": "Library · React",
+     "what": "TypeScript/React library for AI chat — streaming-safe primitives for messages, tool calls, and generated parts.",
+     "key_capabilities": "React · streaming chat primitives"
     },
     {
-      "name": "openui",
-      "url": "https://github.com/thesysdev/openui",
-      "expected_token": "thesysdev/openui"
+     "name": "langui",
+     "repo": "CommandCodeAI/langui",
+     "url": "https://github.com/CommandCodeAI/langui",
+     "stars": 3144,
+     "language": "HTML",
+     "license": "MIT",
+     "role": "Library · Tailwind",
+     "what": "Open-source Tailwind components tailored for AI interfaces — chat, tool calls, and generated UI.",
+     "key_capabilities": "Tailwind · AI-shaped components"
     },
     {
-      "name": "a2ui-sdk",
-      "url": "https://github.com/easyops-cn/a2ui-sdk",
-      "expected_token": "easyops-cn/a2ui-sdk"
-    },
-    {
-      "name": "generative-ui",
-      "url": "https://github.com/CopilotKit/generative-ui",
-      "expected_token": "copilotkit/generative-ui"
-    },
-    {
-      "name": "CopilotKit",
-      "url": "https://github.com/CopilotKit/CopilotKit",
-      "expected_token": "copilotkit/copilotkit"
-    },
-    {
-      "name": "json-render",
-      "url": "https://github.com/vercel-labs/json-render",
-      "expected_token": "vercel-labs/json-render"
-    },
-    {
-      "name": "tambo",
-      "url": "https://github.com/tambo-ai/tambo",
-      "expected_token": "tambo-ai/tambo"
-    },
-    {
-      "name": "OpenIntelligentUI",
-      "url": "https://github.com/CopilotKit/OpenIntelligentUI",
-      "expected_token": "copilotkit/openintelligentui"
-    },
-    {
-      "name": "prefab",
-      "url": "https://github.com/PrefectHQ/prefab",
-      "expected_token": "prefecthq/prefab"
-    },
-    {
-      "name": "flama",
-      "url": "https://github.com/vortico/flama",
-      "expected_token": "vortico/flama"
-    },
-    {
-      "name": "threadplane",
-      "url": "https://github.com/cacheplane/threadplane",
-      "expected_token": "cacheplane/threadplane"
-    },
-    {
-      "name": "moi",
-      "url": "https://github.com/molefrog/moi",
-      "expected_token": "molefrog/moi"
-    },
-    {
-      "name": "assistant-ui",
-      "url": "https://github.com/assistant-ui/assistant-ui",
-      "expected_token": "assistant-ui/assistant-ui"
-    },
-    {
-      "name": "langui",
-      "url": "https://github.com/CommandCodeAI/langui",
-      "expected_token": "commandcodeai/langui"
-    },
-    {
-      "name": "flutter_chat_ui",
-      "url": "https://github.com/flyerhq/flutter_chat_ui",
-      "expected_token": "flyerhq/flutter_chat_ui"
-    },
-    {
-      "name": "AGenUI",
-      "url": "https://github.com/AGenUI/AGenUI",
-      "expected_token": "agenui/agenui"
-    },
-    {
-      "name": "A2UI-Android",
-      "url": "https://github.com/lmee/A2UI-Android",
-      "expected_token": "lmee/a2ui-android"
-    },
-    {
-      "name": "a2ui-vue",
-      "url": "https://github.com/shawnwang15/a2ui-vue",
-      "expected_token": "shawnwang15/a2ui-vue"
-    },
-    {
-      "name": "ngx-json-render",
-      "url": "https://github.com/shteynu/ngx-json-render",
-      "expected_token": "shteynu/ngx-json-render"
-    },
-    {
-      "name": "termite",
-      "url": "https://github.com/shobrook/termite",
-      "expected_token": "shobrook/termite"
-    },
-    {
-      "name": "gemini-chatbot",
-      "url": "https://github.com/vercel-labs/gemini-chatbot",
-      "expected_token": "vercel-labs/gemini-chatbot"
-    },
-    {
-      "name": "langgraphjs-gen-ui-examples",
-      "url": "https://github.com/langchain-ai/langgraphjs-gen-ui-examples",
-      "expected_token": "langchain-ai/langgraphjs-gen-ui-examples"
-    },
-    {
-      "name": "gen-ui-python",
-      "url": "https://github.com/bracesproul/gen-ui-python",
-      "expected_token": "bracesproul/gen-ui-python"
-    },
-    {
-      "name": "gen-ui",
-      "url": "https://github.com/bracesproul/gen-ui",
-      "expected_token": "bracesproul/gen-ui"
-    },
-    {
-      "name": "ai-sdk-preview-rsc-genui",
-      "url": "https://github.com/vercel-labs/ai-sdk-preview-rsc-genui",
-      "expected_token": "vercel-labs/ai-sdk-preview-rsc-genui"
-    },
-    {
-      "name": "morphic",
-      "url": "https://github.com/miurla/morphic",
-      "expected_token": "miurla/morphic"
-    },
-    {
-      "name": "cofounder",
-      "url": "https://github.com/nraiden/cofounder",
-      "expected_token": "nraiden/cofounder"
-    },
-    {
-      "name": "pi-generative-ui",
-      "url": "https://github.com/Michaelliv/pi-generative-ui",
-      "expected_token": "michaelliv/pi-generative-ui"
-    },
-    {
-      "name": "financial-agent-ui",
-      "url": "https://github.com/virattt/financial-agent-ui",
-      "expected_token": "virattt/financial-agent-ui"
-    },
-    {
-      "name": "partialupdate",
-      "url": "https://github.com/philholden/partialupdate",
-      "expected_token": "philholden/partialupdate"
-    },
-    {
-      "name": "MAIC-UI",
-      "url": "https://github.com/THU-MAIC/MAIC-UI",
-      "expected_token": "thu-maic/maic-ui"
+     "name": "flutter_chat_ui",
+     "repo": "flyerhq/flutter_chat_ui",
+     "url": "https://github.com/flyerhq/flutter_chat_ui",
+     "stars": 2360,
+     "language": "Dart",
+     "license": "Apache-2.0",
+     "role": "Library · Flutter",
+     "what": "Free and open-source chat SDK for Flutter — fast, real-time, cross-platform chat UI.",
+     "key_capabilities": "Flutter · cross-platform"
     }
-  ]
+   ]
+  },
+  {
+   "layer_name": "Platform Renderers",
+   "icon": "🖥️",
+   "description": "Same protocol, different surface. These projects render agent-emitted UI on a specific platform — mobile, a JS framework, or the terminal.",
+   "items": [
+    {
+     "name": "AGenUI",
+     "repo": "AGenUI/AGenUI",
+     "url": "https://github.com/AGenUI/AGenUI",
+     "stars": 1192,
+     "language": "C++",
+     "license": "Apache-2.0",
+     "role": "Renderer · Mobile",
+     "what": "Native A2UI renderer for iOS, Android and HarmonyOS — high-performance streaming generative UI on mobile.",
+     "key_capabilities": "iOS/Android/HarmonyOS · streaming"
+    },
+    {
+     "name": "A2UI-Android",
+     "repo": "lmee/A2UI-Android",
+     "url": "https://github.com/lmee/A2UI-Android",
+     "stars": 77,
+     "language": "TypeScript",
+     "license": "Apache-2.0",
+     "role": "Renderer · Android",
+     "what": "Production-ready Jetpack Compose renderer for the A2UI protocol.",
+     "key_capabilities": "Jetpack Compose"
+    },
+    {
+     "name": "a2ui-vue",
+     "repo": "shawnwang15/a2ui-vue",
+     "url": "https://github.com/shawnwang15/a2ui-vue",
+     "stars": 98,
+     "language": "TypeScript",
+     "license": "MIT",
+     "role": "Renderer · Vue 3",
+     "what": "Vue 3 implementation of the A2UI protocol.",
+     "key_capabilities": "Vue 3"
+    },
+    {
+     "name": "ngx-json-render",
+     "repo": "shteynu/ngx-json-render",
+     "url": "https://github.com/shteynu/ngx-json-render",
+     "stars": 4,
+     "language": "TypeScript",
+     "license": "Apache-2.0",
+     "role": "Renderer · Angular",
+     "what": "Generative UI for Angular: a json-render renderer that streams and renders the JSON UI spec.",
+     "key_capabilities": "Angular · json-render"
+    },
+    {
+     "name": "termite",
+     "repo": "shobrook/termite",
+     "url": "https://github.com/shobrook/termite",
+     "stars": 420,
+     "language": "Python",
+     "license": "Apache-2.0",
+     "role": "Renderer · Terminal",
+     "what": "Generative UI in your terminal — render rich agent output as a TUI instead of plain text.",
+     "key_capabilities": "terminal UI"
+    }
+   ]
+  },
+  {
+   "layer_name": "Framework Adapters & Examples",
+   "icon": "🔌",
+   "description": "Reference implementations that wire generative UI into a specific agent framework. Copy the shape, not just the idea.",
+   "items": [
+    {
+     "name": "gemini-chatbot",
+     "repo": "vercel-labs/gemini-chatbot",
+     "url": "https://github.com/vercel-labs/gemini-chatbot",
+     "stars": 1353,
+     "language": "TypeScript",
+     "license": "NOASSERTION",
+     "role": "Starter · Vercel AI SDK",
+     "what": "Build your own generative UI chatbot with the Vercel AI SDK and Gemini.",
+     "key_capabilities": "chatbot starter"
+    },
+    {
+     "name": "langgraphjs-gen-ui-examples",
+     "repo": "langchain-ai/langgraphjs-gen-ui-examples",
+     "url": "https://github.com/langchain-ai/langgraphjs-gen-ui-examples",
+     "stars": 400,
+     "language": "TypeScript",
+     "license": "MIT",
+     "role": "Examples · LangGraph JS",
+     "what": "A collection of generative UI agents written with LangGraph.js.",
+     "key_capabilities": "LangGraph.js"
+    },
+    {
+     "name": "gen-ui-python",
+     "repo": "bracesproul/gen-ui-python",
+     "url": "https://github.com/bracesproul/gen-ui-python",
+     "stars": 388,
+     "language": "TypeScript",
+     "license": null,
+     "role": "Examples · LangChain Python",
+     "what": "Generative UI web application built with LangChain in Python.",
+     "key_capabilities": "LangChain Python"
+    },
+    {
+     "name": "gen-ui",
+     "repo": "bracesproul/gen-ui",
+     "url": "https://github.com/bracesproul/gen-ui",
+     "stars": 292,
+     "language": "TypeScript",
+     "license": null,
+     "role": "Examples · LangChain JS",
+     "what": "Generative UI web application built with LangChain.js.",
+     "key_capabilities": "LangChain.js"
+    },
+    {
+     "name": "ai-sdk-preview-rsc-genui",
+     "repo": "vercel-labs/ai-sdk-preview-rsc-genui",
+     "url": "https://github.com/vercel-labs/ai-sdk-preview-rsc-genui",
+     "stars": 385,
+     "language": "TypeScript",
+     "license": null,
+     "role": "Examples · React Server Components",
+     "what": "Generative UI with React Server Components and the Vercel AI SDK.",
+     "key_capabilities": "RSC · AI SDK"
+    }
+   ]
+  },
+  {
+   "layer_name": "Apps & Demos",
+   "icon": "🎬",
+   "description": "Finished products and runnable demos where the UI is authored by a model — the fastest way to see what generative UI actually feels like.",
+   "items": [
+    {
+     "name": "morphic",
+     "repo": "miurla/morphic",
+     "url": "https://github.com/miurla/morphic",
+     "stars": 9159,
+     "language": "TypeScript",
+     "license": "Apache-2.0",
+     "role": "App · AI search",
+     "what": "An AI-powered search engine with a generative UI — answers rendered as interactive components, not walls of text.",
+     "key_capabilities": "AI search · generative answers"
+    },
+    {
+     "name": "cofounder",
+     "repo": "nraiden/cofounder",
+     "url": "https://github.com/nraiden/cofounder",
+     "stars": 6645,
+     "language": "TypeScript",
+     "license": "MIT",
+     "role": "App · full-stack",
+     "what": "AI-generated apps — full stack plus generative UI.",
+     "key_capabilities": "full-stack generation"
+    },
+    {
+     "name": "pi-generative-ui",
+     "repo": "Michaelliv/pi-generative-ui",
+     "url": "https://github.com/Michaelliv/pi-generative-ui",
+     "stars": 1162,
+     "language": "TypeScript",
+     "license": null,
+     "role": "Demo",
+     "what": "Claude.ai's generative UI — reverse-engineered and rebuilt for self-hosting.",
+     "key_capabilities": "reverse-engineered demos"
+    },
+    {
+     "name": "financial-agent-ui",
+     "repo": "virattt/financial-agent-ui",
+     "url": "https://github.com/virattt/financial-agent-ui",
+     "stars": 793,
+     "language": "TypeScript",
+     "license": null,
+     "role": "Demo · finance",
+     "what": "A financial agent paired with a generative UI.",
+     "key_capabilities": "finance agent"
+    },
+    {
+     "name": "partialupdate",
+     "repo": "philholden/partialupdate",
+     "url": "https://github.com/philholden/partialupdate",
+     "stars": 254,
+     "language": "TypeScript",
+     "license": "MIT",
+     "role": "Demo · multi-user",
+     "what": "Generative UI in multi-user chat — a bot that edits the shared UI as it responds.",
+     "key_capabilities": "multi-user editing"
+    },
+    {
+     "name": "MAIC-UI",
+     "repo": "THU-MAIC/MAIC-UI",
+     "url": "https://github.com/THU-MAIC/MAIC-UI",
+     "stars": 175,
+     "language": "Python",
+     "license": null,
+     "role": "Demo · education",
+     "what": "Making interactive courseware with generative UI.",
+     "key_capabilities": "interactive courseware"
+    }
+   ]
+  }
+ ],
+ "verification_sources": [
+  {
+   "name": "ag-ui",
+   "url": "https://github.com/ag-ui-protocol/ag-ui",
+   "expected_token": "ag-ui-protocol/ag-ui"
+  },
+  {
+   "name": "openui",
+   "url": "https://github.com/thesysdev/openui",
+   "expected_token": "thesysdev/openui"
+  },
+  {
+   "name": "a2ui-sdk",
+   "url": "https://github.com/easyops-cn/a2ui-sdk",
+   "expected_token": "easyops-cn/a2ui-sdk"
+  },
+  {
+   "name": "generative-ui",
+   "url": "https://github.com/CopilotKit/generative-ui",
+   "expected_token": "copilotkit/generative-ui"
+  },
+  {
+   "name": "CopilotKit",
+   "url": "https://github.com/CopilotKit/CopilotKit",
+   "expected_token": "copilotkit/copilotkit"
+  },
+  {
+   "name": "json-render",
+   "url": "https://github.com/vercel-labs/json-render",
+   "expected_token": "vercel-labs/json-render"
+  },
+  {
+   "name": "tambo",
+   "url": "https://github.com/tambo-ai/tambo",
+   "expected_token": "tambo-ai/tambo"
+  },
+  {
+   "name": "OpenIntelligentUI",
+   "url": "https://github.com/CopilotKit/OpenIntelligentUI",
+   "expected_token": "copilotkit/openintelligentui"
+  },
+  {
+   "name": "prefab",
+   "url": "https://github.com/PrefectHQ/prefab",
+   "expected_token": "prefecthq/prefab"
+  },
+  {
+   "name": "flama",
+   "url": "https://github.com/vortico/flama",
+   "expected_token": "vortico/flama"
+  },
+  {
+   "name": "threadplane",
+   "url": "https://github.com/cacheplane/threadplane",
+   "expected_token": "cacheplane/threadplane"
+  },
+  {
+   "name": "moi",
+   "url": "https://github.com/molefrog/moi",
+   "expected_token": "molefrog/moi"
+  },
+  {
+   "name": "assistant-ui",
+   "url": "https://github.com/assistant-ui/assistant-ui",
+   "expected_token": "assistant-ui/assistant-ui"
+  },
+  {
+   "name": "langui",
+   "url": "https://github.com/CommandCodeAI/langui",
+   "expected_token": "commandcodeai/langui"
+  },
+  {
+   "name": "flutter_chat_ui",
+   "url": "https://github.com/flyerhq/flutter_chat_ui",
+   "expected_token": "flyerhq/flutter_chat_ui"
+  },
+  {
+   "name": "AGenUI",
+   "url": "https://github.com/AGenUI/AGenUI",
+   "expected_token": "agenui/agenui"
+  },
+  {
+   "name": "A2UI-Android",
+   "url": "https://github.com/lmee/A2UI-Android",
+   "expected_token": "lmee/a2ui-android"
+  },
+  {
+   "name": "a2ui-vue",
+   "url": "https://github.com/shawnwang15/a2ui-vue",
+   "expected_token": "shawnwang15/a2ui-vue"
+  },
+  {
+   "name": "ngx-json-render",
+   "url": "https://github.com/shteynu/ngx-json-render",
+   "expected_token": "shteynu/ngx-json-render"
+  },
+  {
+   "name": "termite",
+   "url": "https://github.com/shobrook/termite",
+   "expected_token": "shobrook/termite"
+  },
+  {
+   "name": "gemini-chatbot",
+   "url": "https://github.com/vercel-labs/gemini-chatbot",
+   "expected_token": "vercel-labs/gemini-chatbot"
+  },
+  {
+   "name": "langgraphjs-gen-ui-examples",
+   "url": "https://github.com/langchain-ai/langgraphjs-gen-ui-examples",
+   "expected_token": "langchain-ai/langgraphjs-gen-ui-examples"
+  },
+  {
+   "name": "gen-ui-python",
+   "url": "https://github.com/bracesproul/gen-ui-python",
+   "expected_token": "bracesproul/gen-ui-python"
+  },
+  {
+   "name": "gen-ui",
+   "url": "https://github.com/bracesproul/gen-ui",
+   "expected_token": "bracesproul/gen-ui"
+  },
+  {
+   "name": "ai-sdk-preview-rsc-genui",
+   "url": "https://github.com/vercel-labs/ai-sdk-preview-rsc-genui",
+   "expected_token": "vercel-labs/ai-sdk-preview-rsc-genui"
+  },
+  {
+   "name": "morphic",
+   "url": "https://github.com/miurla/morphic",
+   "expected_token": "miurla/morphic"
+  },
+  {
+   "name": "cofounder",
+   "url": "https://github.com/nraiden/cofounder",
+   "expected_token": "nraiden/cofounder"
+  },
+  {
+   "name": "pi-generative-ui",
+   "url": "https://github.com/Michaelliv/pi-generative-ui",
+   "expected_token": "michaelliv/pi-generative-ui"
+  },
+  {
+   "name": "financial-agent-ui",
+   "url": "https://github.com/virattt/financial-agent-ui",
+   "expected_token": "virattt/financial-agent-ui"
+  },
+  {
+   "name": "partialupdate",
+   "url": "https://github.com/philholden/partialupdate",
+   "expected_token": "philholden/partialupdate"
+  },
+  {
+   "name": "MAIC-UI",
+   "url": "https://github.com/THU-MAIC/MAIC-UI",
+   "expected_token": "thu-maic/maic-ui"
+  }
+ ]
 }
