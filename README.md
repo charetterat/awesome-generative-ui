@@ -10,7 +10,7 @@ Protocols, frameworks, component libraries, platform renderers, adapters, and re
 [![Repos](https://img.shields.io/badge/repos-31-blue)](https://github.com/topics/generative-ui)
 [![License](https://img.shields.io/badge/license-CC--BY--4.0-lightgrey.svg)](LICENSE)
 
-> ⛔ **Not affiliated with any project listed.** Star counts are a live snapshot (2026-10-19).
+> ⛔ **Not affiliated with any project listed.** Star counts are a live snapshot (2026-10-24).
 
 </div>
 
