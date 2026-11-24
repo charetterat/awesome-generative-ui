@@ -61,11 +61,9 @@ Generative UI  ·  the model emits a UI spec, the client renders components
 
 ## 📚 Full index
 
-
 ### 📐 1. Protocols & Standards
 
 The wire formats. An agent backend emits these; any conforming renderer draws them. This is the layer that makes generative UI portable across frameworks — and it is why adapters and renderers below can be written by anyone.
-
 
 | Project | Role | Lang | ★ |
 |---|---|---|---:|
@@ -74,12 +72,9 @@ The wire formats. An agent backend emits these; any conforming renderer draws th
 | [a2ui-sdk](https://github.com/easyops-cn/a2ui-sdk) | Protocol SDK | TypeScript | 39 |
 | [generative-ui](https://github.com/CopilotKit/generative-ui) | Reference examples | - | 848 |
 
-
-
 ### 🏗️ 2. Frameworks & SDKs
 
 End-to-end frameworks that own the loop from model output to rendered UI. Pick by stack and by how much control you want over which component renders.
-
 
 | Project | Role | Lang | ★ |
 |---|---|---|---:|
@@ -92,12 +87,9 @@ End-to-end frameworks that own the loop from model output to rendered UI. Pick b
 | [threadplane](https://github.com/cacheplane/threadplane) | Infrastructure | TypeScript | 305 |
 | [moi](https://github.com/molefrog/moi) | Workspace | TypeScript | 183 |
 
-
-
 ### 🧩 3. Component Libraries
 
 The primitives you compose into an agent UI. Not full frameworks — these are the chat shells, message parts, and tool-call renders you build on.
-
 
 | Project | Role | Lang | ★ |
 |---|---|---|---:|
@@ -105,12 +97,9 @@ The primitives you compose into an agent UI. Not full frameworks — these are t
 | [langui](https://github.com/CommandCodeAI/langui) | Library · Tailwind | HTML | 3,144 |
 | [flutter_chat_ui](https://github.com/flyerhq/flutter_chat_ui) | Library · Flutter | Dart | 2,360 |
 
-
-
 ### 🖥️ 4. Platform Renderers
 
 Same protocol, different surface. These projects render agent-emitted UI on a specific platform — mobile, a JS framework, or the terminal.
-
 
 | Project | Role | Lang | ★ |
 |---|---|---|---:|
@@ -120,12 +109,9 @@ Same protocol, different surface. These projects render agent-emitted UI on a sp
 | [ngx-json-render](https://github.com/shteynu/ngx-json-render) | Renderer · Angular | TypeScript | 4 |
 | [termite](https://github.com/shobrook/termite) | Renderer · Terminal | Python | 420 |
 
-
-
 ### 🔌 5. Framework Adapters & Examples
 
 Reference implementations that wire generative UI into a specific agent framework. Copy the shape, not just the idea.
-
 
 | Project | Role | Lang | ★ |
 |---|---|---|---:|
@@ -135,12 +121,9 @@ Reference implementations that wire generative UI into a specific agent framewor
 | [gen-ui](https://github.com/bracesproul/gen-ui) | Examples · LangChain JS | TypeScript | 292 |
 | [ai-sdk-preview-rsc-genui](https://github.com/vercel-labs/ai-sdk-preview-rsc-genui) | Examples · React Server Components | TypeScript | 385 |
 
-
-
 ### 🎬 6. Apps & Demos
 
 Finished products and runnable demos where the UI is authored by a model — the fastest way to see what generative UI actually feels like.
-
 
 | Project | Role | Lang | ★ |
 |---|---|---|---:|
@@ -151,15 +134,11 @@ Finished products and runnable demos where the UI is authored by a model — the
 | [partialupdate](https://github.com/philholden/partialupdate) | Demo · multi-user | TypeScript | 254 |
 | [MAIC-UI](https://github.com/THU-MAIC/MAIC-UI) | Demo · education | Python | 175 |
 
-
-
 ---
 
 ## 🔍 Detailed breakdown
 
-
 ### 📐 Protocols & Standards
-
 
 #### [ag-ui](https://github.com/ag-ui-protocol/ag-ui) · ★16,455
 
@@ -169,7 +148,6 @@ The Agent-User Interaction Protocol — a transport-agnostic event stream connec
 
 - **Key capabilities:** Event-stream spec · Python + TS SDKs
 
-
 #### [openui](https://github.com/thesysdev/openui) · ★10,718
 
 > **Standard · DSL** · `MIT`
@@ -177,7 +155,6 @@ The Agent-User Interaction Protocol — a transport-agnostic event stream connec
 An open standard and DSL for generative UI: the model emits OpenUI Lang, any conforming renderer draws it. Ships with a component library and renderers.
 
 - **Key capabilities:** OpenUI Lang DSL · framework-agnostic
-
 
 #### [a2ui-sdk](https://github.com/easyops-cn/a2ui-sdk) · ★39
 
@@ -187,7 +164,6 @@ TypeScript SDK for the A2UI protocol — agent-to-UI messages that render as nat
 
 - **Key capabilities:** A2UI · TypeScript
 
-
 #### [generative-ui](https://github.com/CopilotKit/generative-ui) · ★848
 
 > **Reference examples**
@@ -196,12 +172,9 @@ Official side-by-side examples of all three generative-UI methods: AG-UI, A2UI/O
 
 - **Key capabilities:** AG-UI · A2UI · MCP Apps
 
-
 ---
 
-
 ### 🏗️ Frameworks & SDKs
-
 
 #### [CopilotKit](https://github.com/CopilotKit/CopilotKit) · ★37,940
 
@@ -211,7 +184,6 @@ The frontend stack for agents and generative UI — React, Angular, mobile, and 
 
 - **Key capabilities:** React/Angular · AG-UI · generative UI
 
-
 #### [json-render](https://github.com/vercel-labs/json-render) · ★18,615
 
 > **Framework · React** · `Apache-2.0`
@@ -219,7 +191,6 @@ The frontend stack for agents and generative UI — React, Angular, mobile, and 
 Vercel Labs' generative UI framework: the model streams JSON, the client renders it with your own components. Third-party renderers already exist for other frameworks.
 
 - **Key capabilities:** streamed JSON · bring-your-own components
-
 
 #### [tambo](https://github.com/tambo-ai/tambo) · ★11,188
 
@@ -229,7 +200,6 @@ Generative UI SDK for React — the agent decides which of your registered compo
 
 - **Key capabilities:** React · component selection
 
-
 #### [OpenIntelligentUI](https://github.com/CopilotKit/OpenIntelligentUI) · ★2,643
 
 > **Framework** · `MIT`
@@ -237,7 +207,6 @@ Generative UI SDK for React — the agent decides which of your registered compo
 Open-source generative UI framework.
 
 - **Key capabilities:** generative UI
-
 
 #### [prefab](https://github.com/PrefectHQ/prefab) · ★742
 
@@ -247,7 +216,6 @@ A generative UI framework from Prefect that even humans can use — declarative 
 
 - **Key capabilities:** declarative · model-composed
 
-
 #### [flama](https://github.com/vortico/flama) · ★301
 
 > **Framework · Python** · `Apache-2.0`
@@ -255,7 +223,6 @@ A generative UI framework from Prefect that even humans can use — declarative 
 A production framework for predictive and generative AI, with a built-in UI layer.
 
 - **Key capabilities:** Python · production
-
 
 #### [threadplane](https://github.com/cacheplane/threadplane) · ★305
 
@@ -265,7 +232,6 @@ The open-source thread-plane for agents: chat, durable threads, and generative U
 
 - **Key capabilities:** durable threads
 
-
 #### [moi](https://github.com/molefrog/moi) · ★183
 
 > **Workspace** · `NOASSERTION`
@@ -274,12 +240,9 @@ Agent-agnostic generative UI workspace — give any agent a shared canvas.
 
 - **Key capabilities:** agent-agnostic canvas
 
-
 ---
 
-
 ### 🧩 Component Libraries
-
 
 #### [assistant-ui](https://github.com/assistant-ui/assistant-ui) · ★12,480
 
@@ -289,7 +252,6 @@ TypeScript/React library for AI chat — streaming-safe primitives for messages,
 
 - **Key capabilities:** React · streaming chat primitives
 
-
 #### [langui](https://github.com/CommandCodeAI/langui) · ★3,144
 
 > **Library · Tailwind** · `MIT`
@@ -297,7 +259,6 @@ TypeScript/React library for AI chat — streaming-safe primitives for messages,
 Open-source Tailwind components tailored for AI interfaces — chat, tool calls, and generated UI.
 
 - **Key capabilities:** Tailwind · AI-shaped components
-
 
 #### [flutter_chat_ui](https://github.com/flyerhq/flutter_chat_ui) · ★2,360
 
@@ -307,12 +268,9 @@ Free and open-source chat SDK for Flutter — fast, real-time, cross-platform ch
 
 - **Key capabilities:** Flutter · cross-platform
 
-
 ---
 
-
 ### 🖥️ Platform Renderers
-
 
 #### [AGenUI](https://github.com/AGenUI/AGenUI) · ★1,192
 
@@ -322,7 +280,6 @@ Native A2UI renderer for iOS, Android and HarmonyOS — high-performance streami
 
 - **Key capabilities:** iOS/Android/HarmonyOS · streaming
 
-
 #### [A2UI-Android](https://github.com/lmee/A2UI-Android) · ★77
 
 > **Renderer · Android** · `Apache-2.0`
@@ -330,7 +287,6 @@ Native A2UI renderer for iOS, Android and HarmonyOS — high-performance streami
 Production-ready Jetpack Compose renderer for the A2UI protocol.
 
 - **Key capabilities:** Jetpack Compose
-
 
 #### [a2ui-vue](https://github.com/shawnwang15/a2ui-vue) · ★98
 
@@ -340,7 +296,6 @@ Vue 3 implementation of the A2UI protocol.
 
 - **Key capabilities:** Vue 3
 
-
 #### [ngx-json-render](https://github.com/shteynu/ngx-json-render) · ★4
 
 > **Renderer · Angular** · `Apache-2.0`
@@ -348,7 +303,6 @@ Vue 3 implementation of the A2UI protocol.
 Generative UI for Angular: a json-render renderer that streams and renders the JSON UI spec.
 
 - **Key capabilities:** Angular · json-render
-
 
 #### [termite](https://github.com/shobrook/termite) · ★420
 
@@ -358,12 +312,9 @@ Generative UI in your terminal — render rich agent output as a TUI instead of 
 
 - **Key capabilities:** terminal UI
 
-
 ---
 
-
 ### 🔌 Framework Adapters & Examples
-
 
 #### [gemini-chatbot](https://github.com/vercel-labs/gemini-chatbot) · ★1,353
 
@@ -373,7 +324,6 @@ Build your own generative UI chatbot with the Vercel AI SDK and Gemini.
 
 - **Key capabilities:** chatbot starter
 
-
 #### [langgraphjs-gen-ui-examples](https://github.com/langchain-ai/langgraphjs-gen-ui-examples) · ★400
 
 > **Examples · LangGraph JS** · `MIT`
@@ -381,7 +331,6 @@ Build your own generative UI chatbot with the Vercel AI SDK and Gemini.
 A collection of generative UI agents written with LangGraph.js.
 
 - **Key capabilities:** LangGraph.js
-
 
 #### [gen-ui-python](https://github.com/bracesproul/gen-ui-python) · ★388
 
@@ -391,7 +340,6 @@ Generative UI web application built with LangChain in Python.
 
 - **Key capabilities:** LangChain Python
 
-
 #### [gen-ui](https://github.com/bracesproul/gen-ui) · ★292
 
 > **Examples · LangChain JS**
@@ -399,7 +347,6 @@ Generative UI web application built with LangChain in Python.
 Generative UI web application built with LangChain.js.
 
 - **Key capabilities:** LangChain.js
-
 
 #### [ai-sdk-preview-rsc-genui](https://github.com/vercel-labs/ai-sdk-preview-rsc-genui) · ★385
 
@@ -409,12 +356,9 @@ Generative UI with React Server Components and the Vercel AI SDK.
 
 - **Key capabilities:** RSC · AI SDK
 
-
 ---
 
-
 ### 🎬 Apps & Demos
-
 
 #### [morphic](https://github.com/miurla/morphic) · ★9,159
 
@@ -424,7 +368,6 @@ An AI-powered search engine with a generative UI — answers rendered as interac
 
 - **Key capabilities:** AI search · generative answers
 
-
 #### [cofounder](https://github.com/nraiden/cofounder) · ★6,645
 
 > **App · full-stack** · `MIT`
@@ -432,7 +375,6 @@ An AI-powered search engine with a generative UI — answers rendered as interac
 AI-generated apps — full stack plus generative UI.
 
 - **Key capabilities:** full-stack generation
-
 
 #### [pi-generative-ui](https://github.com/Michaelliv/pi-generative-ui) · ★1,162
 
@@ -442,7 +384,6 @@ Claude.ai's generative UI — reverse-engineered and rebuilt for self-hosting.
 
 - **Key capabilities:** reverse-engineered demos
 
-
 #### [financial-agent-ui](https://github.com/virattt/financial-agent-ui) · ★793
 
 > **Demo · finance**
@@ -450,7 +391,6 @@ Claude.ai's generative UI — reverse-engineered and rebuilt for self-hosting.
 A financial agent paired with a generative UI.
 
 - **Key capabilities:** finance agent
-
 
 #### [partialupdate](https://github.com/philholden/partialupdate) · ★254
 
@@ -460,7 +400,6 @@ Generative UI in multi-user chat — a bot that edits the shared UI as it respon
 
 - **Key capabilities:** multi-user editing
 
-
 #### [MAIC-UI](https://github.com/THU-MAIC/MAIC-UI) · ★175
 
 > **Demo · education**
@@ -469,9 +408,7 @@ Making interactive courseware with generative UI.
 
 - **Key capabilities:** interactive courseware
 
-
 ---
-
 
 ## ✅ Source verification
 
